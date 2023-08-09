@@ -1,0 +1,282 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: Material(child: home()),
+    debugShowCheckedModeBanner: false,
+  ));
+}
+
+class home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return DefaultTabController(
+        length: 3,
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text("isg32"),
+            bottom: TabBar(
+              tabs: [
+                Tab(
+                  icon: Icon(Icons.movie),
+                  text: "MOVIES",
+                ),
+                Tab(
+                  icon: Icon(Icons.music_note),
+                  text: "MUSIC",
+                ),
+                Tab(
+                  icon: Icon(Icons.video_collection),
+                  text: "REEL",
+                ),
+              ],
+            ),
+          ),
+          drawer: Drawer(
+            child: ListView(
+              children: [
+                DrawerHeader(
+                    padding: EdgeInsets.all(0),
+                    child: UserAccountsDrawerHeader(
+                        accountName: Text("isg32"),
+                        accountEmail: Text("radhemohan32@outlook.com"),
+                        currentAccountPicture: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://media.tenor.com/Xrt-ty39PfEAAAAC/elon-musk-smoke.gif"),
+                        ))),
+                ListTile(
+                  leading: Icon(Icons.home),
+                  title: Text(' Home '),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.wallet),
+                  title: Text(' transactions '),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              ],
+            ),
+          ),
+          body: TabBarView(children: [
+            Container(
+                child: ListView(
+              children: [
+                ListTile(
+                  leading: Image.network(
+                    "https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+                    fit: BoxFit.cover,
+                    width: 50,
+                  ),
+                  title: Text("Jojo Bizzare"),
+                  subtitle: Text("Anime"),
+                  trailing: Icon(Icons.play_circle),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+                    fit: BoxFit.cover,
+                    width: 50,
+                  ),
+                  title: Text("Jojo Bizzare"),
+                  subtitle: Text("Anime"),
+                  trailing: Icon(Icons.play_circle),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+                    fit: BoxFit.cover,
+                    width: 50,
+                  ),
+                  title: Text("Jojo Bizzare"),
+                  subtitle: Text("Anime"),
+                  trailing: Icon(Icons.play_circle),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+                    fit: BoxFit.cover,
+                    width: 50,
+                  ),
+                  title: Text("Jojo Bizzare"),
+                  subtitle: Text("Anime"),
+                  trailing: Icon(Icons.play_circle),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+                    fit: BoxFit.cover,
+                    width: 50,
+                  ),
+                  title: Text("Jojo Bizzare"),
+                  subtitle: Text("Anime"),
+                  trailing: Icon(Icons.play_circle),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+                    fit: BoxFit.cover,
+                    width: 50,
+                  ),
+                  title: Text("Jojo Bizzare"),
+                  subtitle: Text("Anime"),
+                  trailing: Icon(Icons.play_circle),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+                    fit: BoxFit.cover,
+                    width: 50,
+                  ),
+                  title: Text("Jojo Bizzare"),
+                  subtitle: Text("Anime"),
+                  trailing: Icon(Icons.play_circle),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+                    fit: BoxFit.cover,
+                    width: 50,
+                  ),
+                  title: Text("Jojo Bizzare"),
+                  subtitle: Text("Anime"),
+                  trailing: Icon(Icons.play_circle),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+                    fit: BoxFit.cover,
+                    width: 50,
+                  ),
+                  title: Text("Jojo Bizzare"),
+                  subtitle: Text("Anime"),
+                  trailing: Icon(Icons.play_circle),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+                    fit: BoxFit.cover,
+                    width: 50,
+                  ),
+                  title: Text("Jojo Bizzare"),
+                  subtitle: Text("Anime"),
+                  trailing: Icon(Icons.play_circle),
+                ),
+              ],
+            )),
+            Container(
+                child: ListView(
+              children: [
+                ListTile(
+                  leading: Image.network(
+                    "https://hips.hearstapps.com/hmg-prod/images/beethoven-600x600.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text("beethoven"),
+                  subtitle: Text("Music"),
+                  trailing: Icon(Icons.music_note),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://hips.hearstapps.com/hmg-prod/images/beethoven-600x600.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text("beethoven"),
+                  subtitle: Text("Music"),
+                  trailing: Icon(Icons.music_note),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://hips.hearstapps.com/hmg-prod/images/beethoven-600x600.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text("beethoven"),
+                  subtitle: Text("Music"),
+                  trailing: Icon(Icons.music_note),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://hips.hearstapps.com/hmg-prod/images/beethoven-600x600.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text("beethoven"),
+                  subtitle: Text("Music"),
+                  trailing: Icon(Icons.music_note),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://hips.hearstapps.com/hmg-prod/images/beethoven-600x600.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text("beethoven"),
+                  subtitle: Text("Music"),
+                  trailing: Icon(Icons.music_note),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://hips.hearstapps.com/hmg-prod/images/beethoven-600x600.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text("beethoven"),
+                  subtitle: Text("Music"),
+                  trailing: Icon(Icons.music_note),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://hips.hearstapps.com/hmg-prod/images/beethoven-600x600.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text("beethoven"),
+                  subtitle: Text("Music"),
+                  trailing: Icon(Icons.music_note),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://hips.hearstapps.com/hmg-prod/images/beethoven-600x600.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text("beethoven"),
+                  subtitle: Text("Music"),
+                  trailing: Icon(Icons.music_note),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://hips.hearstapps.com/hmg-prod/images/beethoven-600x600.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text("beethoven"),
+                  subtitle: Text("Music"),
+                  trailing: Icon(Icons.music_note),
+                ),
+                ListTile(
+                  leading: Image.network(
+                    "https://hips.hearstapps.com/hmg-prod/images/beethoven-600x600.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text("beethoven"),
+                  subtitle: Text("Music"),
+                  trailing: Icon(Icons.music_note),
+                ),
+              ],
+            )),
+            Container(
+              child: GridView.builder(
+                  itemCount: 30,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 3),
+                  itemBuilder: (context, index) {
+                    return Padding(
+                        padding: EdgeInsets.all(2.0),
+                        child: Container(
+                            child: Image.network(
+                                "https://uploads-ssl.webflow.com/5ee12d8e99cde2e20255c16c/5ef24c446ab1f520e1466edc_flutter-meme-vince-mcmahon.jpg")));
+                  }),
+            )
+          ]),
+        ));
+  }
+}
